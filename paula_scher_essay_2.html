@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <htmllang="en">
     <html>
-<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Mada:400,700|Palanquin:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Mada:400,700|Palanquin:700|Dancing+Script|Anton|Playball|Playfair+Display+SC:900,900i" rel="stylesheet">
 
 <head>
     
@@ -16,25 +16,27 @@
     line-height: 1em;
 }
 
-body { width: 80%;
-       max-width: 800px;
+body { padding: 0 30px;
+       width: 75%;
+       max-width: 700px;
        margin: auto;
-       background: #f0f0f0;
-       color: #333;
+       background: #f9f8ef;
+       color: #353428;
        line-height: 1.8em;
-        text-align: center;}
+       text-align: center;
+        }
+        
 
-header {margin: 6em 0
+header {margin: 4em 0
     } 
 
 header h2 {
     font-style: normal;
     font-size: 2em;
-    color: #333;
+    color: #942222;
         margin-bottom: 0.7em;
-        margin-top: 0.7em;
-font-family: 'Archivo Black', sans-serif;
-        text-shadow: 2px 2px 2px #f00;}
+        margin-top: 1em;
+font-family: 'Playfair Display SC', serif;}
 
 /*---------- TYPOGRAPHY -----------*/
 
@@ -42,52 +44,59 @@ h1, h2, h3, {
     font-weight: normal;
     color:  #942222;
     text-align:center;
-    font-family: 'Archivo Black', sans-serif;}
+    font-family: 'Playfair Display SC', serif;}
 
-p, li {
-    margin-bottom: 1em;
+p, li{
+    margin-bottom: 2em;
     line-height: 1.5em;
 text-align: center;
-        font-family: 'Mada', sans-serif;}
+    font-family: 'Mada', sans-serif;}
 
 
 h1 {font-size: 4em;
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
+    margin-top: 0,5em;
+    margin-bottom: 0,5em;
         text-align: center;
-    font-family: 'Archivo Black', sans-serif;}
+    font-family: 'Playfair Display SC', serif;
+        color: #942222;}
 
 h2 {font-size: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0,5em;
+    margin-top: 0,5em;
         text-align: center;
-    font-family: 'Archivo Black', sans-serif;}
+    font-family: 'Playfair Display SC', serif;
+        color: #942222;}
         
       h3 {font-size: 1.5em;
     margin-bottom: 0.5em;
-          margin-top: 1.5em;
+          margin-top: 0,5em;
         text-align: center;
-          font-family: 'Archivo Black', sans-serif;}
+          font-family: 'Archivo Black', sans-serif;
+        color: #942222;}
 
 blockquote {
-    padding: 1em 0 4em 0;
-    font-size: 1.75em;
+    padding: 0em 0.1em 0;
+    font-size: 1.5em;
     line-height: 1.4em;
-    color: #777;
+    color: #e57230;
         text-align: center;
-        font-family: 'Mada', sans-serif;}
-
+    font-family: 'Dancing Script', cursive;}
+        
 blockquote cite{
-    font-size: .75em}
-    
+    font-size: .6em;
+        color: #e57230;}
+        
+
         
 /* -------------- LINKS ---------------- */
 
 a {
     color: #fff;
-    text-decoration: none;}
+    text-decoration: none;
+        display: inline;}
 
 a:hover {
-    color: #006341;
+    color: #942222;
     border-bottom: 1px dotted;}
 
 
@@ -97,17 +106,17 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    margin: 0;
+    margin-bottom: 0em;
     width: 100%;
-    background-color: #FABB47;
+    background-color: #b29d94;
     padding: 1em 0;}
 
 nav ul {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-        font-size: 1,7em;
-        font-family: 'Archivo Black', sans-serif;}
+        font-size: 1,5em;
+       font-family: 'Anton', sans-serif;}
 
 
 nav ul li {
@@ -132,27 +141,122 @@ img {
     margin: 4em auto;
     padding: 0;
     max-width: 100%;}
+        
+/*---------------- Social Icons--------------- */
 
+.social a img {
+    opacity: 0.5;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;}
 
-/* --------------- FOOTER ----------------*/
+.social a: hover img {
+    opacity: 0,8;}
 
-footer {
+.social li {
+    display: inline-block;
+    color: #444;}
+
+.social li img{ 
+    width: 50px;}
+
+.social {
+    margin-top: 1em;
+    margin-bottom: 1em;
     text-align: center;
-    font-size: .75em;
+    margin: auto;}
+
+.social img {
+    width: 20%;
+    align-items: center;
+    display: block;
+    float: left;
+    margin: 1em 1em 1em 0;}
+
+.social ul {
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;} 
+        
+        
+
+
+/* --------------- Bibliography ----------------*/
+
+p, li{
+    margin-bottom: 1em;
     line-height: 1.5em;
-    padding-bottom: 2em;
-        font-family: 'Catamaran', sans-serif;}
-
-footer hr {margin: 3em 0;}
-
-footer p {
-    margin-top: 2em;
+text-align: center;
+    font-family: 'Mada', sans-serif;}
+        
+h3 {
+            margin-bottom: 2em;
+        margin-top: 3em;
+        }
+    
+  /* --------------- FLEX -------------- */
+        
+        .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1em 0;
+    justify-content: space-between;
 }
 
-footer a {
-    color: #c06;}
-    
-    
+div.flex-item {
+    flex-basis: 50%;
+}
+
+.flex-item img {
+    width: 20%;
+    height: auto;
+}
+
+.flex-container p {
+    flex-basis: 70%;
+}
+          article {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: normal;
+  text-align: center;
+  color: #7F7E7C
+}
+          
+article > * {
+  padding: 1px;
+  flex: 1 100%;
+}
+
+.main {
+  text-align: left;
+  background: #e5dbda;
+}
+
+.aside-1 {
+    background: #e5dbda;
+        padding: 2px;}
+        
+
+body {
+  padding: 2em; 
+}
+        
+.dropcap {
+     float: left;
+     font-size: 4em;
+     line-height: 0,5em;
+     margin: 0;
+     color: #e57230;}
+        
+hr {
+    margin: 2em 0;
+    height: 2px; 
+    width: 100%;
+    background-color: #942222;
+    border: 0 none;}
+        
+  
     
     
     </style>
@@ -164,11 +268,12 @@ footer a {
 <body>
     
 <article> 
-<header>
+<header class="aside-2">
     
     <h1> Paula Scher</h1> 
    
-    <h3>How She influenced Modern typography and design?</h3> 
+    <i><h3 style="color: #b29d94;" font-family="Playball', cursive;">
+     How She influenced Modern typography and design?</h3></i> 
 
     <nav> 
     <ul>
@@ -177,26 +282,29 @@ footer a {
         <li><a href="#work-and-career">Work and Career</a></li>
         <li><a href="#how-paula-scher-influenced-design">How Paula Scher influenced design</a></li>
         <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#bibliography">Bibliography</a></li>
     </ul>
     </nav>
     </header>
     <section>
 
-    <p>In this essay I plan to explore the title of the essay of how Paula Scher has influenced modern typography and design. I want to expand my knowledge of how her work came to life and not only how she influenced today's typography, but also what she was inspired by before creating her designs. In this essay first of all I want to learn more about Paula Scher's work and life, and how she got to the stage of popularity in the design industry, that she is at right now. Next I plan to discover more about Scher's style of her work and the different techniques she uses for her designs. I plan to get to know where she started. The main focus of this essay is to get to know the works of Paula Scher and how she influenced the design industry. </p>
+        <p>In this essay I plan to explore the title of the essay of how <b> Paula Scher</b> has influenced modern typography and design. I want to expand my knowledge of how her work came to life and not only how she influenced today's typography, but also what she was inspired by before creating her designs. In this essay first of all I want to learn more about Paula Scher's work and life, and how she got to the stage of popularity in the design industry, that she is at right now. Next I plan to discover more about Scher's style of her work and the different techniques she uses for her designs. I plan to get to know where she started. The main focus of this essay is to get to know the works of Paula Scher and how she influenced the design industry. </p>
         
     </section>
+    <hr/>
     
-    <section>
-
     <h3 id='getting-to-know-paula'>Getting to know Paula</h3> 
-     
-            <img src="images/paula-scher.jpg"alt="Paula Scher"/>
+    
+    <section class="main">
 
+    <img src="images/paula-scher.jpg"alt="Paula Scher"/>
+        
+        
 
-    <p>Paula Scher is an American graphic designer, painter and art educator in design. She was born in Washington, 6th October 1948. Paula has been in the design industry for over forty years now, mainly based in New York. Scher learned Swiss Design principles at the design school she attended. In her school she developed her skills to illustrate with type. She took inspiration from Neville Brody and the New Wave typography. Scher always wanted to create expressionist style of typography. She often refers to the quote “Words have meaning and typography has feeling” (Walters, 2010), and always tries to combine the two together, so her work has a lot of meaning and feeling. Scher also takes influence from her husband, Seymour Chwast who created the Pushpin Studios with Milton Glaser; through his use of Victorian, Art Nouveau and Art Deco forms and illustrative styles to produce unexpected forms in illustration and type. In a way, they balance each other in their method of visual communication, Chwast through illustration and Scher through typography.  </p> 
+        <p><span class="dropcap">P</span>aula Scher is an American graphic designer, painter and art educator in design. She was born in <i>Washington, 6th October 1948</i>. Paula has been in the design industry for over forty years now, mainly based in New York. Scher learned Swiss Design principles at the design school she attended. In her school she developed her skills to illustrate with type. She took inspiration from Neville Brody and the New Wave typography. Scher always wanted to create expressionist style of typography. She often refers to the quote </p><blockquote> “Words have meaning and typography has feeling”<cite> - Walters, 2010</cite> </blockquote>,<p> and always tries to combine the two together, so her work has a lot of meaning and feeling. Scher also takes influence from her husband, Seymour Chwast who created the Pushpin Studios with Milton Glaser; through his use of Victorian, Art Nouveau and Art Deco forms and illustrative styles to produce unexpected forms in illustration and type. In a way, they balance each other in their method of visual communication, Chwast through illustration and Scher through typography.</p>
 
     </section>
-    
+    <hr/>
     <section>
 
     <h3 id='style'>Style</h3> 
@@ -204,10 +312,10 @@ footer a {
                     <img src="images/image-1.jpg"alt="One of a Kind"/>
 
 
-    <p>Scher’s style show's bold imagery and uses typography in an almost illustrative rather than print style and she continues to this day to push design boundaries and her own.  She took a unique approach by mixing different typefaces, modifying letter spacing and combining groups of type of different scale and angle. Her typography is very strong and she uses words that are meaningful and always makes an impact from her pieces. She always uses bold and loud colours, which makes her designs very eye catching with the typography where you cannot walk pass them without looking into the designs. In her designs you can definitely see the link between the bases that she learned of Swiss Design principles with the bold and meaningful type. Her early work was usually made by hand, either drawn, painted, or built because there were no computers for her to work on so her work was more organic. Her early work for the city’s Public Theatre, with its graffiti-like style combined with elements of traditional woodcuts and Victoriana. Her designs involve album records, posters, logos, branding and environmental design. </p>
+    <p> <span class="dropcap">S</span>cher’s style show's bold imagery and uses typography in an almost illustrative rather than print style and she continues to this day to push design boundaries and her own.  She took a unique approach by mixing different typefaces, modifying letter spacing and combining groups of type of different scale and angle. Her typography is very strong and she uses words that are meaningful and always makes an impact from her pieces. She always uses bold and loud colours, which makes her designs very eye catching with the typography where you cannot walk pass them without looking into the designs. In her designs you can definitely see the link between the bases that she learned of Swiss Design principles with the bold and meaningful type. Her early work was usually made by hand, either drawn, painted, or built because there were no computers for her to work on so her work was more organic. Her early work for the city’s Public Theatre, with its graffiti-like style combined with elements of traditional woodcuts and Victoriana. Her designs involve album records, posters, logos, branding and environmental design. </p>
 
     </section>
-    
+    <hr/>
     <section>
 
     <h3 id='work-and-career'>Work and Career</h3> 
@@ -215,18 +323,18 @@ footer a {
         <img src="images/image-6.jpg"alt="CBR Records"/>
 
 
-    <p>Paula Scher has moved to New York and in 1972 she was hired by 'CBS Records'. She worked in advertising and promotions department for two years, and then she decided to leave to have a more creative input in design. She started working at competing label 'Atlantic Records', where she started designing her first album covers. After a year of working for them she returned to 'CBS Records'. While working there for eight more years she was credited for designing over 150 album covers. Some of the main covers includes designs for; Boston, Eric Gale, Leonard Bernstein, Bob James, Bob James and Earl Klugh, Roger Dean and David Howells etc.  Adding to her success, her designs were recognized with four Grammy nominations. She is also credited with reviving historical typefaces and design styles. </p>
+    <p><span class="dropcap">P</span>aula Scher has moved to New York and in 1972 she was hired by 'CBS Records'. She worked in advertising and promotions department for two years, and then she decided to leave to have a more creative input in design. She started working at competing label 'Atlantic Records', where she started designing her first album covers. After a year of working for them she returned to 'CBS Records'. While working there for eight more years she was credited for designing over 150 album covers. Some of the main covers includes designs for; Boston, Eric Gale, Leonard Bernstein, Bob James, Bob James and Earl Klugh, Roger Dean and David Howells etc.  Adding to her success, her designs were recognized with four Grammy nominations. She is also credited with reviving historical typefaces and design styles. </p>
         
             <img src="images/image-7.jpg"alt="CBR Records"/>
     
 
-    <p>In 1982 she left 'CBS Records' to continue in working on her own as a more independent designer. Paula Scher developed her new typographic solution based on and inspired by Russian constructivism and Art deco. The Russian constructivism has inspired Scher for her typography. She did not copy the early constructivist style but used its vocabulary of form on her works.</p>  
+    <p><span class="dropcap">I</span>n 1982 she left 'CBS Records' to continue in working on her own as a more independent designer. Paula Scher developed her new typographic solution based on and inspired by Russian constructivism and Art deco. The Russian constructivism has inspired Scher for her typography. She did not copy the early constructivist style but used its vocabulary of form on her works.</p>  
 
     <p>1984 was a year when Paula Scher co-founded Koppel & Scher with editorial designer Terry Koppel. During their partnership which lasted six years, she produced series of identities, advertising, packaging and book jackets. </p>
 
-    <p>Next in 1991 Paula Scher has joined as a partner to Pentagram in the New York office. She has been involved in the works with Pentagram ever since.</p>  
+        <p>Next in <i>1991</i> Paula Scher has joined as a partner to Pentagram in the New York office. She has been involved in the works with Pentagram ever since.</p>  
 
-    <p>She became a design educator at the school of visual arts in New York in 1992. Her work has been exhibited all over the world in different galleries and museums. Her work is in the permanent collection exhibited in the Museum of Modern Art and Cooper Hewitt National Design Museum, in New York and the list goes on to the Victoria and Albert museum in London, the Library of Congress in Washington etc. </p>
+        <p>She became a design educator at the school of visual arts in New York in <i>1992</i>. Her work has been exhibited all over the world in different galleries and museums. Her work is in the permanent collection exhibited in the Museum of Modern Art and Cooper Hewitt National Design Museum, in New York and the list goes on to the Victoria and Albert museum in London, the Library of Congress in Washington etc. </p>
 
     <p>Paula Scher was the first designer to create promotional graphics and a new identity for The Public Theater. This became the turning point of identity in designs that influence the graphic design created for theatrical promotion and for cultural institutions overall. </p> 
         
@@ -240,7 +348,7 @@ footer a {
     <p>Another massive point in her career was the poster campaign of The Merry Wives of Windsor and Two Gentlemen of Verona, that she created on her own, for the New York Shakespeare Festival in Central Park production. It was inspired by the tradition of old-fashioned English theater style. This has set the foundation for the new identity and visual language that began to identify the Public Theater for the rest of the decade and beyond. Her designs for the Shakespeare in the Park campaign were made public all over New York City.  </p>
 
     </section>
-    
+    <hr/>
     <section>
 
     <h3 id='how-paula-influenced-design'>How Paula Scher influenced Design </h3>
@@ -248,10 +356,10 @@ footer a {
         <img src="images/image-11.jpg"alt="Public Theatre Poster"/>
 
 
-    <p>Paula Scher is a massive influence on today's design industry as she was the first women to be a principal at Pentagram New York. She is one of the most awarded designers in the industry for her work in design and branding. She created the style that in the time that she was starting was not popular it was bolder and very striking. Her style received a lot of attention at the time as a more urban and street typography/graffiti style. Designers started to get inspired by her work and create pieces in the same style for different occasions. I would say her work is a combination of the Swiss Design, Pop art and street styles, so best of all worlds. She brought a breath of fresh air into design with new exciting designs that people were excited to see and her career shows how successful it made her and how many brands and companies worked with her for advertising including Coca-Cola, CItibank, Baush + Lomb and more. From all the research that I have done I have found how much Scher has done for the design industry for over forty years now, still making a massive impact. Paula Scher has been an inspiration for design students and art students, especially as she has been an educator of design. She would not only inspire her students but also students from different schools as they would find her through her work. </p>
+    <p><span class="dropcap">P</span>aula Scher is a massive influence on today's design industry as she was the first women to be a principal at Pentagram New York. She is one of the most awarded designers in the industry for her work in design and branding. She created the style that in the time that she was starting was not popular it was bolder and very striking. Her style received a lot of attention at the time as a more urban and street typography/graffiti style. Designers started to get inspired by her work and create pieces in the same style for different occasions. I would say her work is a combination of the Swiss Design, Pop art and street styles, so best of all worlds. She brought a breath of fresh air into design with new exciting designs that people were excited to see and her career shows how successful it made her and how many brands and companies worked with her for advertising including Coca-Cola, CItibank, Baush + Lomb and more. From all the research that I have done I have found how much Scher has done for the design industry for over forty years now, still making a massive impact. Paula Scher has been an inspiration for design students and art students, especially as she has been an educator of design. She would not only inspire her students but also students from different schools as they would find her through her work. </p>
 
     </section>
-    
+    <hr/>
     <section>
 
     <h3 id='conclusion'>Conclusion</h3>  
@@ -259,7 +367,36 @@ footer a {
                 <img src="images/image-12.jpg"alt="Public Theatre Poster"/>
 
     <p>To conclude I want to say that Paula Scher had a massive influence as a female on the design industry. As I have mentioned Scher brought new fresh designs into the graphic design world when she started working in the CBS Record. Since she started working there she has been making impact for over forty years. Paula has worked for the Public Theatre now for thirty years and through her work for them she has influence a massive audience of designers and just general public. In this Essay I got to know a lot of details about Paula's life and her design career which was my aim. I also got to know how much she has done in the design which was my main focus. I have found out a lot of interesting facts about Scher's life and people she worked with in this essay.  I feel like I have found everything that I planned to at the start of my essay through research of looking at series of web information, videos of interviews with Paula Scher and through books in the Library "Make it bigger". These sources have helped me to find the information I was looking for.</p>
-    
+        
     </section>
+    <hr/>
+    <section class="aside-1">
+        <h3 id='bibliography'>Bibliography</h3>
+        
+<ul>
+    <li><b>Work and Career-</b> historygraphicdesign.com (online) <i>Available at;</i> http://www.historygraphicdesign.com/the-age-of-information/postmodern-design/207-paula-scher -<b>Accessed 15th December 2017</b> </li>
+    <li><b>Style and Interests-</b> cynthiachircop.blogspot.co.uk (online)<i> Available at;</i> http://cynthiachircop.blogspot.co.uk/2015/01/paula-scher.html -<b>Accessed 15th December 2017</b></li>
+    <li><b>General Information-</b> wikipedia.com (online) <i>Available at;</i> https://en.wikipedia.org/wiki/Paula_Scher -<b>Accessed 10th December 2017</b></li>
+    <li><b>Pula Scher Pentagram-</b> Pentagram.com (online) <i>Available at;</i> https://www.pentagram.com/about/paula-scher- <b>Accessed 11th December 2017</b>  </li>
+    <li><b>Life and Career-</b> idesigni.co.uk (online) <i>Available at;</i> https://idesigni.co.uk/blog/contemporary-graphic-designers-paula-scher/- <b>Accessed 15th December 2017</b>  </li>
+    <li><b>Reputation-</b> eyemagazine.com (online) <i>Available at;</i> http://www.eyemagazine.com/feature/article/reputations-paula-scher- <b>Accessed 15th December 2017</b>  </li>
+    <li><b>Interview-</b> youtube.com (video) <i>Available at;</i> https://www.youtube.com/watch?v=znQEswmsKCY <b>Accessed 10th December 2017</b> </li>
+        <li><b>Inspiration and General Information-</b> "Make it Bigger" by <i>Paula Scher</i> (library book) <i>Available at;</i>https://debbiekellyhug.files.wordpress.com <b>Accessed 8th December 2017</b></li>
+        </ul>
+    </section>
+        
+     <hr/>   
+    
+        
+	<div class="social">
+		<ul>
+            <li><a href="https://wiktoriabigaj.tumblr.com/"><img src="social_icons/tumblr.svg.svg" alt="Follow me on Tumblr" /></a></li>
+            <li><a href="https://github.com/bigajwiktoria"><img src="social_icons/git_hub.svg.svg" alt="Follow me on GitHub" /></a></li>
+            <li><a href="https://www.bigajwiktoria@gmail.com/"><img src="social_icons/email.svg.svg" alt="Contact me through Email" /></a></li>
+            <li><a href="https://twitter.com/BigajWiktoria"><img src="social_icons/twitter.svg.svg" alt="Follow me on Twitter" /></a></li>
+        </ul>
+        </div>
+    <a href="#top" class="anchor">Back to the Top</a>
+    
     </article>
         </body>
